@@ -10,6 +10,5 @@ class TurnNumberSequence {
   }
 }
 
-const sequence = new TurnNumberSequence();
+export default TurnNumberSequence;
 
-export default sequence;
