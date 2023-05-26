@@ -1,5 +1,5 @@
-import TicketDispenser from '../turn-ticket-dispenser/ticket-dispenser';
-import TurnNumberSequence from '../turn-ticket-dispenser/turn-number-sequence';
+import TicketDispenser from './TicketDispenser';
+import TurnNumberSequence from '../TurnNumberSequence/TurnNumberSequence';
 
 describe('Given a Turn Ticket Dispenser', () => {
   let turnNumberSequence: TurnNumberSequence;

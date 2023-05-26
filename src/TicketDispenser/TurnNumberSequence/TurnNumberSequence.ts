@@ -1,4 +1,4 @@
-import { Sequence } from './types';
+import { Sequence } from '../types';
 
 class TurnNumberSequence implements Sequence<number> {
   private turnNumber: number;

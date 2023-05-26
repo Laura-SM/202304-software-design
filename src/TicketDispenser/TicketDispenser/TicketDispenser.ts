@@ -1,5 +1,5 @@
-import { Sequence } from './types';
-import TurnTicket from './turn-ticket';
+import { Sequence } from '../types';
+import TurnTicket from '../TurnTicket/TurnTicket';
 
 class TicketDispenser {
   #turnNumber: Sequence<number>;
