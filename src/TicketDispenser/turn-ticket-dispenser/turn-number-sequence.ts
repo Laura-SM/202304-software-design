@@ -1,11 +1,13 @@
-class TurnNumberSequence {
+import { Sequence } from './types';
+
+class TurnNumberSequence implements Sequence<number> {
   private turnNumber: number;
 
   constructor() {
     this.turnNumber = 0;
   }
 
-  public getNextTurnNumber() {
+  getNextValue(): number {
     return this.turnNumber++;
   }
 }
