@@ -15,3 +15,8 @@ export interface Collection <T> {
   getList(): T[]
 }
 
+export interface Cart <T, S> {
+  add(item: S): void,
+  remove(id: string): void,
+  empty(): void,
+}
