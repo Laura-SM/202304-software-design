@@ -1,0 +1,17 @@
+En todos suponemos que la función sleep, es una función síncrona que bloquea el callstack el tiempo que indiquemos
+Dado los siguientes casos:
+¿Cuántos mensajes de 'Second' se van a ejecutar en la consola?
+
+
+const timer = setInterval(          // setInterval is a makrofunction
+  () => {
+    console.log('Second');          // call stack
+    setTimeout(                     // setInterval is a makrofunction
+      () => clearInterval(timer),   
+      500
+    )
+  }, 
+  100
+);
+
+sleep(1000);                         // call stack
